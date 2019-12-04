@@ -15,6 +15,7 @@
 	$order = $_POST["Order"];
 	$AscendDescend=$_POST["AscendDescend"];
 	$query = 'SELECT * FROM Doctors ORDER BY ' .$order. ' ' .$AscendDescend.';';
+	echo $query;
 	$result=mysqli_query($connection, $query);
 	if (!$result){
 		die("there were no selections");
@@ -23,7 +24,7 @@
 <form action="docInfo.php" method="post">
 	<?php
 	while ($row=mysqli_fetch_assoc($result)){
-		echo '<input type = "radio" name="Doctorss" value="'.$row["licenseNumber"].'" > ' . $row["firstName"] . ' ' . $row["lastName"] . '<br>';
+		echo '<input type = "radio" name="Doctorss" value="'.$row["licenceNumber"].'" > ' . $row["firstName"] . ' ' . $row["lastName"] . '<br>';
 	}
 	?>
 	<input type="submit" value="submit"/>

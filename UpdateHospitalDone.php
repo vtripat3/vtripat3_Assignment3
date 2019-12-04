@@ -12,7 +12,7 @@
 		die("Invalid Entry");
 	}
 	include "connection.php";
-	$query = 'UPDATE Hospital SET Name="'.$hospitalName.'" WHERE hospitalCode="'.$hospitalCode.'";';
+	$query = 'UPDATE Hospital SET hospitalName="'.$hospitalName.'" WHERE hospitalCode="'.$hospitalCode.'";';
 	$result=mysqli_query($connection, $query);
 	echo "Hospital name Updated";
 	mysqli_close($connection);

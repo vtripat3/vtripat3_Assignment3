@@ -7,7 +7,7 @@
 <body>
 <?php
 	include "connection.php";
-	$LicNumber = $_POST["LicenceNum"];
+	$LicNumber = $_POST["LicenseNum"];
 	$query = 'select count(licenceNumber) as a from Doctors WHERE licenceNumber="'.$LicNumber.'";';	
 	$result=mysqli_query($connection, $query);
 	$row=mysqli_fetch_assoc($result);

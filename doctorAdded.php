@@ -25,7 +25,7 @@
 			die("License Already in Database");
 		}
 	}	
-	$queryb = 'INSERT INTO Doctors (licenceNumber, firstName, lastName, specialty, licenceDate, hospitalCode) VALUES("'.$LicNum.'","'.$ftName.'","'.$ltName.'","'.$Special.'","'.$licDate.'","'.$HospitalN.'");';
+	$queryb = 'INSERT INTO Doctors (licenceNumber, firstName, lastName, specialty, dateLicensed, hospitalCode) VALUES("'.$licNum.'","'.$ftName.'","'.$ltName.'","'.$Special.'","'.$licDate.'","'.$HospitalN.'");';
 	$resultb=mysqli_query($connection, $queryb);
 	if (!$resultb){
 		die("Could not insert into database");

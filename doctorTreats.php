@@ -9,7 +9,7 @@
 	include "connection.php";
 
 	$docId=$_POST["docId"];
-	$patId=$_POST["patId"];
+	$patId=$_POST["addPatient"];
 	$query = 'select licenceNumber from Doctors;';
 	$result=mysqli_query($connection, $query);
 	if (!$result){
@@ -21,6 +21,7 @@
 		}
 	}	
 	$queryb = 'INSERT INTO `Treats` (`docId`, `patId`) VALUES("'.$docId.'","'.$patId.'");';
+	echo $queryb;
 	$resultb=mysqli_query($connection, $queryb);
 	if (!$resultb){
 		die("queryInserttreat failed");

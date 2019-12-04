@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title> Update Hospital </title>
-	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="Hospital.css">
 </head>
 <body>
 <?php
@@ -17,7 +17,7 @@
 	<h2> Pick Hospital.</h2>
 	<?php
 	while ($row=mysqli_fetch_assoc($result)){
-		echo '<input type = "radio" name="HospitaslNa" value="'.$row["hospitalCode"].'" > Code: '. $row["hospitalCode"] . ' Name: ' . $row["hospitalName"] . '<br>';
+		echo '<input type = "radio" name="HospitalN" value="'.$row["hospitalCode"].'" > Code: '. $row["hospitalCode"] . ' Name: ' . $row["hospitalName"] . '<br>';
 	}
 	?>
 	<h2> Please enter new name.</h2>

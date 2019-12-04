@@ -11,7 +11,7 @@
 <h1> Here are the Doctors Licensed prior to your selected date:</h1>
 <ol>
 <?php
-	$LDate = $_POST["LicDate"];
+	$LDate = $_POST["licDate"];
 	$query = 'SELECT * FROM Doctors WHERE dateLicensed < "' . $LDate . '";';
 	$result=mysqli_query($connection, $query);
 	if (!$result){

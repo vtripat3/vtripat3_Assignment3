@@ -10,11 +10,11 @@
 <form action="getDoctor.php" method="post">
 	<h2> List the doctors that work here. </h2>
 	<h3> Would you like to order by first or last name? </h3>
-	<input type="radio" name="Order" value="fName" checked="checked"> By First Name<br>
-	<input type="radio" name="Order" value="lName"> By Last Name<br>
+	<input type="radio" name="Order" value="firstName" checked="checked"> By First Name<br>
+	<input type="radio" name="Order" value="lastName"> By Last Name<br>
 	<h4> Would you like to view them in ascending or descending order? </h4>
-	<input type="radio" name="AscendDescend" value="Ascend" checked="checked"> Ascending<br>
-	<input type="radio" name="AscendDescend" value="Descend"> Descending<br>
+	<input type="radio" name="AscendDescend" value="ASC" checked="checked"> Ascending<br>
+	<input type="radio" name="AscendDescend" value="DESC"> Descending<br>
 	<input type="submit" value="View Doctors"><br>
 </form>
 <h2> I would like to view doctors licensed prior to:</h2>

@@ -24,7 +24,7 @@
 <form action="treatmentStopped.php" method="post">
 	<?php
 	while ($row=mysqli_fetch_assoc($result)){
-		echo '<input type = "radio" name="ids" value="' . $row["id"] . '" >' . $row["docFName"] . ' ' . $row["docLName"] . ' treats ' . $row["patFName"] . ' ' . $row["patLName"] . '<br>';
+		echo '<input type = "radio" name="id" value="' . $row["id"] . '" >' . $row["docFName"] . ' ' . $row["docLName"] . ' treats ' . $row["patFName"] . ' ' . $row["patLName"] . '<br>';
 	}
 	?>
 	<input type="submit" value="Stop"/>
